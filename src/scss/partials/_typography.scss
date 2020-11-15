@@ -1,0 +1,23 @@
+body {
+    font-family: lato, sans-serif;
+    color: $text-color;
+}
+
+h1 {
+    color: $pink;
+    font-size: 2em;
+}
+
+h1, .nav__logo {
+    font-family: 'playfair display', sans-serif;
+}
+
+p {
+    font-family: lato, sans-serif;
+    line-height: 27px;
+    font-size: 16px;
+}
+
+.tab a {
+    color: $pink;
+}

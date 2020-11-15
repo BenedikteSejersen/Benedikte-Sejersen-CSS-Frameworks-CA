@@ -1,0 +1,91 @@
+.news__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 767.98px) {
+        display: block;
+    }
+}
+
+.news__card {
+    box-shadow: 3px 0 20px rgba(0,0,0,0.5);
+    border: none;
+    background: #fff;
+    width: 20%;
+    margin: 30px;
+
+    @media only screen and (max-width: 767.98px) {
+        margin: 50px auto;
+        width: 90%;
+    }
+}
+
+// img
+.newscard__img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+// content
+.newscard__h4 {
+    color: $dark-text-color;
+    margin: 10px 0 5px 20px;
+}
+
+.newscard__p {
+    margin: 10px 0 5px 20px;
+    max-width: 80%;
+}
+
+
+// btn
+.newscard__btn::after {
+    content: "";
+    position: absolute;
+    background: #767676 !important;
+    border: 1px solid #767676 !important;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.newscard__btn:hover::after {
+    display: none !important;
+}
+
+.newscard__btn {
+    color: #fff !important;
+    background: $pink !important;
+    position: relative;
+    background: #767676;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    border: none !important;
+
+    width: 80%;
+    padding: 10px 0;
+    @media only screen and (max-width: 767.98px) {
+        width: 90%;
+        padding: 10px 0;
+        margin: 10px auto 30px auto;
+    }
+}
+
+    .newscard__btn:hover {
+        border: 1px solid $pink !important;
+        background: #fff !important;
+        color: $pink!important;
+        text-decoration: none;
+    }
+.newscard__span {
+    width: 30px;
+    height: 100%;
+    background: #767676;
+    border: 1px solid red;
+    position: absolute;
+    right: 0;
+}

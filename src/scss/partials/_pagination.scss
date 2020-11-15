@@ -1,0 +1,15 @@
+.page-link {
+    border: 1px solid $pink;
+    color: $pink;
+}
+
+.page-link:hover {
+    border: 1px solid $pink;
+    color: $pink;
+}
+
+.active .page-link {
+    background: $pink !important;
+    color: #fff;
+    border: 1px solid $pink !important;
+}

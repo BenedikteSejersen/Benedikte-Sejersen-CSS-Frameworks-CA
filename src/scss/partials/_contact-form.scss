@@ -1,0 +1,81 @@
+.contact__input {
+    margin-left: 0px !important;
+    border: none;
+}
+
+.contact__input--website {
+    border-radius: 0 5px 5px 0 !important;
+
+    @media only screen and (max-width: 767.98px) {
+        border-radius: 5px !important;
+    }
+}
+
+textarea:focus {
+    box-shadow: 0 0 10px #E92569 !important;
+    border: 1px solid #E92569 !important;
+}
+
+.form__check-container{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.form__submit {
+    background: #767676;
+    border: 1px solid #767676;
+}
+
+.form__submit:hover {
+    background: #fff;
+    border: 1px solid #767676;
+    color: $pink;
+}
+
+.form__check-container label {
+    margin: 20px 0 20px 20px;
+
+    @media only screen and (max-width: 767.98px) {
+        margin: 10px 0 10px 30px;
+    }
+}
+
+.form__check-container input {
+    position: relative;
+    z-index: -9999;
+    border: 1px solid red;
+  }
+  
+  .form__check-container span {
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: 1px solid $pink;
+    background: $pink;
+    border-radius: 3px;
+    transition: ease-in-out 0.3s;
+    position: absolute;
+    bottom: 25px;
+
+    @media only screen and (max-width: 767.98px) {
+        bottom: 65%;;
+    }
+  }
+
+  .form__check-container span:hover {
+      background: #fff;
+      transform: scale(1.2);
+  }
+  
+  .form__check-container input:checked + span {
+    width: 5px;
+    height: 5px;
+    background: $pink;
+    background: #fff;
+  }
